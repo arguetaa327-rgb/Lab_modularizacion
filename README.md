@@ -3,7 +3,7 @@ Laboratorio de Programacion
 
 ##Trabajo en pareja:
  
- Alumnas :Carlin Alondra Argueta Espino 0905-25-13150 y Joselyn Marleni Lòpez y Lòpez 0905-25-18082
+ Alumnas : Carlin Alondra Argueta Espino 0905-25-13150 y Joselyn Marleni Lòpez y Lòpez 0905-25-18082
 
 Ejercicio de Modularización en Java
 Parte 1 – Análisis del programa
