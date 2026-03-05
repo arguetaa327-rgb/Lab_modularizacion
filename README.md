@@ -1,2 +1,2 @@
-# Lab_modualrizacion.java
+# Lab_modularizacion.java
 Laboratorio de Programacion
