@@ -13,13 +13,13 @@ public class Main {
 
     public static void main(String[] args) {
 
-        System.out.println("Bienvenido al sistema de gestión de estudiantes.");
+        System.out.println("Bienvenido al sistema de gestion de estudiantes.");
 
         int opcion = 0;
 
         while (opcion != 5) {
             mostrarMenu();
-            opcion = leerOpcion(); // aquí ya valida que sea número
+            opcion = leerOpcion(); // aqui ya valida que sea número
 
             switch (opcion) {
                 case 1:
@@ -43,7 +43,7 @@ public class Main {
                     break;
 
                 default:
-                    System.out.println("Opción no válida. Debe intentar nuevamente.");
+                    System.out.println("Opcion no válida. Debe intentar nuevamente.");
             }
         }
 
@@ -57,10 +57,10 @@ public class Main {
         System.out.println("3. Calcular promedio de calificaciones");
         System.out.println("4. Mostrar estudiante con la calificación más alta");
         System.out.println("5. Salir");
-        System.out.print("Seleccione una opción: ");
+        System.out.print("Seleccione una opcion: ");
     }
 
-    // Método para leer opción con validación (no deja avanzar hasta que sea número)
+    // Método para leer opción con validacion (no deja avanzar hasta que sea número)
     public static int leerOpcion() {
         while (true) {
             String entrada = scanner.nextLine().trim();
@@ -68,12 +68,12 @@ public class Main {
             try {
                 return Integer.parseInt(entrada);
             } catch (NumberFormatException e) {
-                System.out.print("Error: Debe ingresar un número. Intente otra vez: ");
+                System.out.print("Error: Debe ingresar un numero. Intente otra vez: ");
             }
         }
     }
 
-    // Método para agregar estudiante (validación de nombre + calificación en rango)
+    // Método para agregar estudiante (validación de nombre + calificacion en rango)
     public static void agregarEstudiante() {
 
         // Validar que el nombre no sea vacío
@@ -91,21 +91,21 @@ public class Main {
         double calificacion;
 
         while (true) {
-            System.out.print("Ingrese la calificación del estudiante (0-100): ");
+            System.out.print("Ingrese la calificacion del estudiante (0-100): ");
             String entrada = scanner.nextLine().trim();
 
             try {
                 calificacion = Double.parseDouble(entrada);
 
                 if (calificacion < 0 || calificacion > 100) {
-                    System.out.println("La calificación debe estar entre 0 y 100.");
+                    System.out.println("La calificacion debe estar entre 0 y 100.");
                     continue;
                 }
 
                 break; // ya es válida
 
             } catch (NumberFormatException e) {
-                System.out.println("Error: Debe ingresar un número válido (ej: 85 o 85.5).");
+                System.out.println("Error: Debe ingresar un numero valido (ej: 85 o 85.5).");
             }
         }
 
@@ -126,7 +126,7 @@ public class Main {
         System.out.println("\nLista de estudiantes:");
 
         for (int i = 0; i < estudiantes.size(); i++) {
-            System.out.println(estudiantes.get(i) + " - Calificación: " + calificaciones.get(i));
+            System.out.println(estudiantes.get(i) + " - Calificacion: " + calificaciones.get(i));
         }
     }
 
@@ -168,7 +168,7 @@ public class Main {
             }
         }
 
-        System.out.println("El estudiante con la calificación más alta es: "
+        System.out.println("El estudiante con la calificacion mas alta es: "
                 + estudianteMax + " con " + maxCalificacion);
     }
 }
