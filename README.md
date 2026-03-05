@@ -10,7 +10,7 @@ Parte 1 – Análisis del programa
 Identificación de tareas repetitivas
 Las tareas que pueden convertirse en métodos son:
 
-Agregar estudiante
+Agregamos estudiante
 Mostrar lista de estudiantes
 Calcular promedio de calificaciones
 Mostrar estudiante con la calificación más alta
